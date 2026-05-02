@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculator11</string>
+
+    <string name="hint_number">Увядзіце лік</string>
+    <string name="btn_check">Вызначыць тып</string>
+
+    <string name="col_type">Тып</string>
+    <string name="col_bytes">Байты</string>
+    <string name="col_bits">Біты</string>
+
+    <string name="type_byte">byte</string>
+    <string name="type_short">short</string>
+    <string name="type_int">int</string>
+    <string name="type_long">long</string>
+    <string name="type_float">float</string>
+    <string name="type_double">double</string>
+    <string name="type_char">char</string>
+
+    <string name="result_type_placeholder">Тып для ліку пакуль не вызначаны</string>
+    <string name="result_type">Падыходзячы тып: %1$s</string>
+
+    <string name="error_empty">Увядзіце лік</string>
+    <string name="error_not_number">Няправільны ўвод</string>
+    <string name="error_out_of_range">Лік па-за дапушчальным дыяпазонам</string>
+</resources>
