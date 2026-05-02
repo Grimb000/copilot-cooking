@@ -2,16 +2,18 @@
 
 # Overview
 
-Report on LabRabota 2.  
-Android Studio laboratory work: creating and improving simple applications, number guessing game, and Calculator11 with data type analysis.
+Report on LabRabota 2 and LabRabota 3.  
+Android Studio laboratory work: creating and improving simple applications, number guessing game, and Calculator11 with data type analysis, plus extended Lab 3 versions.
 
 # Projects
 
-This repository contains three main Android projects:
+This repository contains the following Android projects:
 
 1. **GuessTheNumber-Java** – number guessing game implemented in Java (Task 2, 3.1).  
 2. **GuessTheNumber-Kotlin** – the same game reimplemented in Kotlin with additional checks (Task 3.2).  
 3. **Calculator11-Kotlin** – Calculator11 that analyses primitive data types and selects the smallest suitable type for a given number (Task 3.3, Variant 11).
+4. **GuessTheNumber-Lab3** – extended guess-the-number game with dialogs, progress bar, images, animations, and multithreading (`lab3project1_kislov`).  
+5. **Calculator11-Lab3** – multi-window calculator using fragments, dialogs, progress bar, animations, and background computation (`lab3project2_kislov`).
 
 Each project uses a single Activity with XML layouts based on `ConstraintLayout` and additional layout containers (TableLayout/LinearLayout).
 

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calculatorRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_number"
+            android:inputType="numberSigned|numberDecimal" />
+
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/btn_check" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/cbShowTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:checked="true"
+        android:text="@string/show_table" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swAnimations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:checked="true"
+        android:text="@string/animations_enabled" />
+
+    <TableLayout
+        android:id="@+id/tableTypes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TableRow>
+            <TextView
+                style="@style/CellHeader"
+                android:text="@string/col_type" />
+            <TextView
+                style="@style/CellHeader"
+                android:text="@string/col_bytes" />
+            <TextView
+                style="@style/CellHeader"
+                android:text="@string/col_bits" />
+        </TableRow>
+
+        <TableRow>
+            <TextView style="@style/Cell" android:text="@string/type_byte" />
+            <TextView style="@style/Cell" android:text="1" />
+            <TextView style="@style/Cell" android:text="8" />
+        </TableRow>
+
+        <TableRow>
+            <TextView style="@style/Cell" android:text="@string/type_short" />
+            <TextView style="@style/Cell" android:text="2" />
+            <TextView style="@style/Cell" android:text="16" />
+        </TableRow>
+
+        <TableRow>
+            <TextView style="@style/Cell" android:text="@string/type_int" />
+            <TextView style="@style/Cell" android:text="4" />
+            <TextView style="@style/Cell" android:text="32" />
+        </TableRow>
+
+        <TableRow>
+            <TextView style="@style/Cell" android:text="@string/type_long" />
+            <TextView style="@style/Cell" android:text="8" />
+            <TextView style="@style/Cell" android:text="64" />
+        </TableRow>
+
+        <TableRow>
+            <TextView style="@style/Cell" android:text="@string/type_float" />
+            <TextView style="@style/Cell" android:text="4" />
+            <TextView style="@style/Cell" android:text="32" />
+        </TableRow>
+
+        <TableRow>
+            <TextView style="@style/Cell" android:text="@string/type_double" />
+            <TextView style="@style/Cell" android:text="8" />
+            <TextView style="@style/Cell" android:text="64" />
+        </TableRow>
+
+        <TableRow>
+            <TextView style="@style/Cell" android:text="@string/type_char" />
+            <TextView style="@style/Cell" android:text="2" />
+            <TextView style="@style/Cell" android:text="16" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvResultType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/result_type_placeholder"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/btnOpenResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:text="@string/btn_open_result" />
+</LinearLayout>
