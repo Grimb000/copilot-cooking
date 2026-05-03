@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Угадай число 5 — задание 3</string>
+    <string name="behind">Недолёт!</string>
+    <string name="ahead">Перелёт!</string>
+    <string name="hit">В точку!</string>
+    <string name="input_value">Проверить</string>
+    <string name="play_more">Сыграть ещё</string>
+    <string name="try_to_guess">Попробуйте угадать число (1 – %1$d)</string>
+    <string name="error_empty">Введите число</string>
+    <string name="error_not_number">Неверный ввод</string>
+    <string name="error_out_of_range">Число должно быть от 1 до %1$d</string>
+    <string name="dialog_win_title">Победа!</string>
+    <string name="dialog_lose_title">Попытки закончились</string>
+    <string name="dialog_win_message">Вы угадали число %1$d за %2$d попыток.</string>
+    <string name="dialog_lose_message">Загаданное число было %1$d.</string>
+    <string name="dialog_play_again">Сыграть ещё</string>
+    <string name="dialog_exit">Выход</string>
+    <string name="tries_status">Попытка %1$d из %2$d</string>
+    <string name="range_label">Диапазон</string>
+    <string name="hints_enabled">Показывать подсказки</string>
+    <string name="animations_enabled">Анимация включена</string>
+    <string name="exit">Выход</string>
+    <string name="content_desc_target">Мишень</string>
+    <string name="gesture_hint">Рисуйте цифры жестами, жест стоп — галочка</string>
+    <string name="gesture_pad_label">Поле для ввода жестов</string>
+    <string name="gesture_not_recognized">Жест не распознан</string>
+</resources>
