@@ -2,10 +2,23 @@
 <resources>
     <string name="app_name">Calculator11 3</string>
 
+    <string name="mode_types">Тып даных</string>
+    <string name="mode_basic">Звычайны калькулятар</string>
+
     <string name="hint_number">Увядзіце лік</string>
     <string name="btn_check">Вызначыць тып</string>
-    <string name="btn_open_result">Адкрыць вынік</string>
     <string name="btn_close">Закрыць</string>
+
+    <string name="btn_clear">C</string>
+    <string name="btn_backspace">⌫</string>
+    <string name="btn_dot">.</string>
+    <string name="btn_minus">-</string>
+    <string name="btn_add">+</string>
+    <string name="btn_div">÷</string>
+    <string name="btn_mul">×</string>
+    <string name="btn_equals">=</string>
+
+    <string name="calc_display_default">0</string>
 
     <string name="col_type">Тып</string>
     <string name="col_bytes">Байты</string>
@@ -32,5 +45,9 @@
     <string name="error_empty">Увядзіце лік</string>
     <string name="error_not_number">Няправільны ўвод</string>
     <string name="error_out_of_range">Лік па-за дапушчальным дыяпазонам</string>
+    <string name="error_div_zero">Дзяленне на нуль</string>
+    <string name="error_calc_invalid">Няправільны выраз</string>
+    <string name="error_calc_overflow">Памылка вылічэння</string>
+
     <string name="content_desc_calc">Калькулятар</string>
 </resources>
