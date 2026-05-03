@@ -36,3 +36,79 @@
 Добавлены тесты `testAutoKeyboardHiding` (после нажатия «Проверить» клавиатура скрывается, проверка через `isNotDisplayed()`) и `testAccessibility` (включены `AccessibilityChecks`, проверка `contentDescription` у кнопки «Проверить» и «Новая игра»).
 
 Скриншот: окно Run/Tests с результатами `testAutoKeyboardHiding` и `testAccessibility`.
+
+## Задание 9. Основы ADB: установка, логирование, файлы («Калькулятор»)
+Команды:
+```bash
+# установка APK на эмулятор
+adb install -r calculator/app/build/outputs/apk/debug/app-debug.apk
+
+# логирование только ошибок в файл
+adb logcat *:E > logcat_errors.txt
+
+# создание папки для артефактов на устройстве
+adb shell mkdir -p /sdcard/lab4
+
+# скриншот на устройстве и перенос на ПК
+adb shell screencap -p /sdcard/lab4/calculator_div_zero.png
+adb pull /sdcard/lab4/calculator_div_zero.png .
+```
+Ожидаемая ошибка при делении на ноль: `java.lang.ArithmeticException: / by zero` (или аналогичная `ArithmeticException`).
+
+Скриншот: файл `logcat_errors.txt` в проводнике проекта + скриншот калькулятора после деления на ноль (полученный через `adb pull`).
+
+## Задание 10. Эмуляция системных событий через ADB («Угадай число»)
+Команды:
+```bash
+# тестовое SMS
+adb emu sms send 12345 "Test message"
+
+# входящий звонок и его завершение
+adb emu gsm call 12345
+adb emu gsm cancel 12345
+```
+Ожидаемое поведение:
+- При SMS появится уведомление; интерфейс игры не должен исчезать, введенное число и счетчик попыток остаются на месте.
+- При звонке приложение уйдет в паузу/фон, после отмены звонка возвращаемся в игру и прогресс должен сохраниться.
+
+Скриншот: уведомление о SMS на эмуляторе + экран игры после возврата со звонка (видно, что введенные данные сохранены).
+
+## Задание 14. Использование псевдолокалей (оба приложения)
+Фрагмент `build.gradle` (уровень модуля, `debug`-сборка):
+```kotlin
+buildTypes {
+    debug {
+        isPseudoLocalesEnabled = true
+    }
+}
+```
+Инструкция для эмулятора: Settings → System → Languages & input → Languages → Add a language → English (XA).
+
+Шаблон отчета о тестировании псевдолокали:
+- «Калькулятор»: проверять, не обрезаются ли подписи кнопок, не «вылезают» ли цифры и результаты, нет ли захардкоженных строк без акцентов.
+- «Угадай число»: проверять длину подсказок и сообщений, видимость кнопок «Проверить»/«Новая игра», корректность расширенных строк и отсутствие необработанных строк.
+
+Скриншот: экран каждого приложения при включенной English (XA) с видимыми расширенными строками.
+
+## Задание 15. Функциональное тестирование локализации (оба приложения)
+Добавлены локализации для «Угадай число»:
+- `values-de/strings.xml` (пример альтернативного языка — немецкий).
+- `values-ru/strings.xml` (пример plurals для слова «попытка»).
+
+Пример `values-de/strings.xml`:
+```xml
+<!-- Button label for submitting the entered number -->
+<string name="input_value">Prüfen</string>
+```
+
+Пример `values-ru/strings.xml` с plurals:
+```xml
+<!-- Количество попыток в сообщении о прогрессе игры -->
+<plurals name="attempts_count">
+    <item quantity="one">%d попытка</item>
+    <item quantity="few">%d попытки</item>
+    <item quantity="many">%d попыток</item>
+</plurals>
+```
+
+Скриншот: список ресурсов в `values-de/` и `values-ru/` + экран игры с переключенным языком (немецкий/русский).
