@@ -53,14 +53,14 @@ adb shell mkdir -p /sdcard/lab4
 adb shell screencap -p /sdcard/lab4/calculator_div_zero.png
 adb pull /sdcard/lab4/calculator_div_zero.png .
 ```
-Ожидаемая ошибка при делении на ноль: `java.lang.ArithmeticException: / by zero` (или аналогичная ошибка `ArithmeticException`).
+Ожидаемая ошибка при делении на ноль в реализации с целочисленной арифметикой: `java.lang.ArithmeticException: / by zero` (в зависимости от реализации возможны `Infinity`/`Error` в UI).
 
 Скриншот: файл `logcat_errors.txt` в проводнике проекта + скриншот калькулятора после деления на ноль (полученный через `adb pull`).
 
 ## Задание 10. Эмуляция системных событий через ADB («Угадай число»)
 Команды:
 ```bash
-# тестовое SMS
+# тестовое SMS (12345 — пример тестового номера)
 adb emu sms send 12345 "Test message"
 
 # входящий звонок и его завершение

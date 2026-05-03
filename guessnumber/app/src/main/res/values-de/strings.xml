@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Zahl erraten!</string>
+    <string name="app_name">Rate die Zahl!</string>
     <string name="behind">Zu niedrig</string>
     <string name="ahead">Zu hoch</string>
     <string name="hit">Richtig geraten</string>
