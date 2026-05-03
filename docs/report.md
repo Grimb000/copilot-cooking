@@ -53,7 +53,7 @@ adb shell mkdir -p /sdcard/lab4
 adb shell screencap -p /sdcard/lab4/calculator_div_zero.png
 adb pull /sdcard/lab4/calculator_div_zero.png .
 ```
-Ожидаемая ошибка при делении на ноль: `java.lang.ArithmeticException: / by zero` (или аналогичная `ArithmeticException`).
+Ожидаемая ошибка при делении на ноль: `java.lang.ArithmeticException: / by zero` (или аналогичное `ArithmeticException`).
 
 Скриншот: файл `logcat_errors.txt` в проводнике проекта + скриншот калькулятора после деления на ноль (полученный через `adb pull`).
 
