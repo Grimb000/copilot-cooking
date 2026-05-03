@@ -45,4 +45,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.test.core)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Библиотека для работы AccessibilityChecks в тестах
+    androidTestImplementation("androidx.test.espresso:espresso-accessibility:3.5.1")
 }

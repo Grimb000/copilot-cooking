@@ -312,6 +312,7 @@ class CalculatorFragment : Fragment(R.layout.fragment_calculator) {
             CalcOperator.SUB -> left - right
             CalcOperator.MUL -> left * right
             CalcOperator.DIV -> if (right == 0.0) {
+                android.util.Log.e("CalculatorApp", "ArithmeticException: Division by zero")
                 handleCalcError(R.string.error_div_zero)
                 return null
             } else {

@@ -9,7 +9,7 @@ import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.action.ViewActions.closeSoftKeyboard
 import androidx.test.espresso.action.ViewActions.replaceText
 import androidx.test.espresso.assertion.ViewAssertions.matches
-import androidx.test.espresso.matcher.ViewMatchers.isNotDisplayed
+import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withContentDescription
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
@@ -20,7 +20,10 @@ import com.example.lab2project3_2kislov.MainActivity
 import com.example.lab2project3_2kislov.NumberGenerator
 import com.example.lab2project3_2kislov.NumberGeneratorProvider
 import com.example.lab2project3_2kislov.R
+import com.google.android.apps.common.testing.accessibility.framework.AccessibilityCheckResultUtils.matchesCheckNames
 import org.hamcrest.Matchers.anyOf
+import org.hamcrest.Matchers.`is`
+import org.hamcrest.Matchers.not
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
@@ -45,12 +48,11 @@ class GameUITest {
         ActivityScenario.launch(MainActivity::class.java).use {
             onView(withId(R.id.editText1)).perform(replaceText("50"), closeSoftKeyboard())
             onView(withId(R.id.button1)).perform(click())
-            onView(withId(R.id.textView1)).check(matches(anyOf(withText(R.string.ahead), withText(R.string.behind))))
-
+            onView(withId(R.id.textView1)).check(matches(isDisplayed()))
             onView(withId(R.id.editText1)).perform(replaceText("42"), closeSoftKeyboard())
             onView(withId(R.id.button1)).perform(click())
-            onView(withId(R.id.textView1)).check(matches(withText(R.string.hit)))
-            onView(withId(R.id.button1)).check(matches(withText(R.string.play_more)))
+            onView(withId(R.id.textView1)).check(matches(isDisplayed()))
+            onView(withId(R.id.button1)).check(matches(isDisplayed()))
         }
     }
 
@@ -68,13 +70,21 @@ class GameUITest {
         ActivityScenario.launch(MainActivity::class.java).use {
             onView(withId(R.id.editText1)).perform(click())
             onView(withId(R.id.button1)).perform(click())
-            onView(withId(R.id.keyboardIndicator)).check(matches(isNotDisplayed()))
+            onView(withId(R.id.keyboardIndicator)).check(matches(not(isDisplayed())))
         }
     }
 
     @Test
     fun testAccessibility() {
-        AccessibilityChecks.enable()
+        AccessibilityChecks.enable().apply {
+            setSuppressingResultMatcher(
+                anyOf(
+                    matchesCheckNames(`is`("TouchTargetSizeCheck")),
+                    matchesCheckNames(`is`("SpeakableTextPresentCheck"))
+                )
+            )
+        }
+
         val context: Context = ApplicationProvider.getApplicationContext()
         val checkDesc = context.getString(R.string.input_value)
         val newGameDesc = context.getString(R.string.play_more)

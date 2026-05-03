@@ -12,5 +12,8 @@
     <string name="out_of_range">Number must be between 1 and 100</string>
     <string name="exit">Exit</string>
     <string name="no_more_tries">No more tries! The number was %1$d</string>
-
+    <plurals name="attempts_count">
+        <item quantity="one">%d attempt</item>
+        <item quantity="other">%d attempts</item>
+    </plurals>
 </resources>

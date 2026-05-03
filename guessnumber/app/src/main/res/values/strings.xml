@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Угадай число!</string>
     <string name="behind">Больше</string>
@@ -11,5 +12,11 @@
     <string name="exit">Выход</string>
     <string name="no_more_tries">Попытки закончились! Число было %1$d</string>
 
-
+    <!-- Количество попыток -->
+    <plurals name="attempts_count">
+        <item quantity="one">%d попытка</item>
+        <item quantity="few">%d попытки</item>
+        <item quantity="many">%d попыток</item>
+        <item quantity="other">%d попыток</item>
+    </plurals>
 </resources>
