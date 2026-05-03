@@ -103,11 +103,12 @@ buildTypes {
 
 Пример `values-ru/strings.xml` с plurals:
 ```xml
-<!-- Количество попыток в сообщении о прогрессе игры -->
+<!-- Количество попыток в сообщениях о прогрессе игры (например, "Осталось X попыток") -->
 <plurals name="attempts_count">
     <item quantity="one">%d попытка</item>
     <item quantity="few">%d попытки</item>
     <item quantity="many">%d попыток</item>
+    <item quantity="other">%d попыток</item>
 </plurals>
 ```
 
