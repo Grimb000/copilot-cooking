@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculator11 3</string>
+
+    <string name="mode_types">Data type</string>
+    <string name="mode_basic">Basic calculator</string>
+
+    <string name="hint_number">Enter a number</string>
+    <string name="btn_check">Check type</string>
+    <string name="btn_close">Close</string>
+
+    <string name="btn_clear">C</string>
+    <string name="btn_backspace">⌫</string>
+    <string name="btn_dot">.</string>
+    <string name="btn_minus">-</string>
+    <string name="btn_add">+</string>
+    <string name="btn_div">÷</string>
+    <string name="btn_mul">×</string>
+    <string name="btn_equals">=</string>
+
+    <string name="calc_display_default">0</string>
+
+    <string name="col_type">Type</string>
+    <string name="col_bytes">Bytes</string>
+    <string name="col_bits">Bits</string>
+
+    <string name="type_byte">byte</string>
+    <string name="type_short">short</string>
+    <string name="type_int">int</string>
+    <string name="type_long">long</string>
+    <string name="type_float">float</string>
+    <string name="type_double">double</string>
+    <string name="type_char">char</string>
+
+    <string name="result_type_placeholder">Type for the number is not defined yet</string>
+    <string name="result_type">Suitable type: %1$s</string>
+    <string name="result_header">Calculation result</string>
+    <string name="input_label">Input: %1$s</string>
+
+    <string name="show_table">Show type table</string>
+    <string name="animations_enabled">Animations enabled</string>
+    <string name="dialog_error_title">Error</string>
+    <string name="dialog_ok">OK</string>
+
+    <string name="error_empty">Enter a number</string>
+    <string name="error_not_number">Invalid input</string>
+    <string name="error_out_of_range">Number is out of range</string>
+    <string name="error_div_zero">Division by zero</string>
+    <string name="error_calc_invalid">Invalid expression</string>
+    <string name="error_calc_overflow">Calculation error</string>
+
+    <string name="content_desc_calc">Calculator</string>
+</resources>

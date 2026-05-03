@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Угадай число!</string>
+    <string name="behind">Больше</string>
+    <string name="ahead">Меньше</string>
+    <string name="hit">Угадал</string>
+    <string name="input_value">Проверить</string>
+    <string name="play_more">Новая игра</string>
+    <string name="try_to_guess">Попробуйте угадать число (1 – 100)</string>
+    <string name="error">Неверный ввод</string>
+    <string name="out_of_range">Число должно быть от 1 до 100</string>
+    <string name="exit">Выход</string>
+    <string name="no_more_tries">Попытки закончились! Число было %1$d</string>
+
+
+</resources>
