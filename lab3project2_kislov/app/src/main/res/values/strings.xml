@@ -1,10 +1,23 @@
 <resources>
     <string name="app_name">Calculator11 3</string>
 
+    <string name="mode_types">Тип данных</string>
+    <string name="mode_basic">Обычный калькулятор</string>
+
     <string name="hint_number">Введите число</string>
     <string name="btn_check">Определить тип</string>
-    <string name="btn_open_result">Открыть результат</string>
     <string name="btn_close">Закрыть</string>
+
+    <string name="btn_clear">C</string>
+    <string name="btn_backspace">⌫</string>
+    <string name="btn_dot">.</string>
+    <string name="btn_minus">-</string>
+    <string name="btn_add">+</string>
+    <string name="btn_div">÷</string>
+    <string name="btn_mul">×</string>
+    <string name="btn_equals">=</string>
+
+    <string name="calc_display_default">0</string>
 
     <string name="col_type">Тип</string>
     <string name="col_bytes">Байты</string>
@@ -31,5 +44,9 @@
     <string name="error_empty">Введите число</string>
     <string name="error_not_number">Неверный ввод</string>
     <string name="error_out_of_range">Число вне допустимого диапазона</string>
+    <string name="error_div_zero">Деление на ноль</string>
+    <string name="error_calc_invalid">Неверное выражение</string>
+    <string name="error_calc_overflow">Ошибка вычисления</string>
+
     <string name="content_desc_calc">Калькулятор</string>
 </resources>

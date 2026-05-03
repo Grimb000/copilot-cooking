@@ -2,10 +2,23 @@
 <resources>
     <string name="app_name">Calculator11 3</string>
 
+    <string name="mode_types">Data type</string>
+    <string name="mode_basic">Basic calculator</string>
+
     <string name="hint_number">Enter a number</string>
     <string name="btn_check">Check type</string>
-    <string name="btn_open_result">Open result</string>
     <string name="btn_close">Close</string>
+
+    <string name="btn_clear">C</string>
+    <string name="btn_backspace">⌫</string>
+    <string name="btn_dot">.</string>
+    <string name="btn_minus">-</string>
+    <string name="btn_add">+</string>
+    <string name="btn_div">÷</string>
+    <string name="btn_mul">×</string>
+    <string name="btn_equals">=</string>
+
+    <string name="calc_display_default">0</string>
 
     <string name="col_type">Type</string>
     <string name="col_bytes">Bytes</string>
@@ -32,5 +45,9 @@
     <string name="error_empty">Enter a number</string>
     <string name="error_not_number">Invalid input</string>
     <string name="error_out_of_range">Number is out of range</string>
+    <string name="error_div_zero">Division by zero</string>
+    <string name="error_calc_invalid">Invalid expression</string>
+    <string name="error_calc_overflow">Calculation error</string>
+
     <string name="content_desc_calc">Calculator</string>
 </resources>
