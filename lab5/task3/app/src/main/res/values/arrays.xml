@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="range_options">
+        <item>1–50 (7 попыток)</item>
+        <item>1–100 (10 попыток)</item>
+        <item>1–200 (12 попыток)</item>
+    </string-array>
+</resources>

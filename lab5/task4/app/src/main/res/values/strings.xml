@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Calculator11 5 — задание 4</string>
+
+    <string name="mode_types">Тип данных</string>
+    <string name="mode_basic">Обычный калькулятор</string>
+
+    <string name="hint_number">Введите число</string>
+    <string name="btn_check">Определить тип</string>
+    <string name="btn_close">Закрыть</string>
+
+    <string name="btn_clear">C</string>
+    <string name="btn_backspace">⌫</string>
+    <string name="btn_dot">.</string>
+    <string name="btn_minus">-</string>
+    <string name="btn_add">+</string>
+    <string name="btn_div">÷</string>
+    <string name="btn_mul">×</string>
+    <string name="btn_equals">=</string>
+
+    <string name="calc_display_default">0</string>
+
+    <string name="col_type">Тип</string>
+    <string name="col_bytes">Байты</string>
+    <string name="col_bits">Биты</string>
+
+    <string name="type_byte">byte</string>
+    <string name="type_short">short</string>
+    <string name="type_int">int</string>
+    <string name="type_long">long</string>
+    <string name="type_float">float</string>
+    <string name="type_double">double</string>
+    <string name="type_char">char</string>
+
+    <string name="result_type_placeholder">Тип для числа пока не определён</string>
+    <string name="result_type">Подходящий тип: %1$s</string>
+    <string name="result_header">Результат вычисления</string>
+    <string name="input_label">Введено: %1$s</string>
+
+    <string name="show_table">Показывать таблицу типов</string>
+    <string name="animations_enabled">Анимация включена</string>
+    <string name="dialog_error_title">Ошибка</string>
+    <string name="dialog_ok">Ок</string>
+
+    <string name="error_empty">Введите число</string>
+    <string name="error_not_number">Неверный ввод</string>
+    <string name="error_out_of_range">Число вне допустимого диапазона</string>
+    <string name="error_div_zero">Деление на ноль</string>
+    <string name="error_calc_invalid">Неверное выражение</string>
+    <string name="error_calc_overflow">Ошибка вычисления</string>
+
+    <string name="content_desc_calc">Калькулятор</string>
+    <string name="gesture_hint">Жесты: цифры, +, -, ×, ÷, галочка =, Z — очистка</string>
+    <string name="gesture_pad_label">Поле для ввода жестов</string>
+    <string name="gesture_not_recognized">Жест не распознан</string>
+</resources>
