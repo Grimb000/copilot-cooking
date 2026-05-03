@@ -5,5 +5,6 @@
         <item quantity="one">%d попытка</item>
         <item quantity="few">%d попытки</item>
         <item quantity="many">%d попыток</item>
+        <item quantity="other">%d попыток</item>
     </plurals>
 </resources>
