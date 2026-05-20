@@ -50,7 +50,7 @@
 
 ### WeatherApplication
 
-![Weather main](WeatherForecast_launched.png)
+![Weather main](WeatherForecast_launched.jpg)
 
 ![Weather details](WeatherForecast_precise_info.png)
 
