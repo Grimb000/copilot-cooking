@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Task7.5 SQLite Migration</string>
+    <string name="task74_title">Task 7.5: Миграция схемы военнослужащих</string>
+    <string name="task74_subtitle">Приложение обновляет схему БД до версии 2, добавляет поля birth_date, position, rank, salary и сохраняет существующие записи.</string>
+    <string name="show_records">Показать записи</string>
+    <string name="add_record">Добавить запись</string>
+    <string name="replace_record">Заменить данные в одной записи</string>
+    <string name="records_title">Список военнослужащих после миграции</string>
+    <string name="migration_ready">Миграция подготовлена. Текущих записей: %1$d.</string>
+    <string name="record_added">Добавлена новая запись с ID %1$d. Всего записей: %2$d.</string>
+    <string name="record_replaced">Количество обновлённых записей: %1$d.</string>
+</resources>

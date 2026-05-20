@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "com.example.task73.proto";
+option java_multiple_files = true;
+
+message AppSettingsProto {
+  int32 launch_count = 1;
+  string app_uuid = 2;
+  int32 max_attempts = 3;
+  int32 games_played = 4;
+  int32 games_won = 5;
+  int32 best_score = 6;
+  int32 total_score = 7;
+}

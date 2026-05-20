@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Task2 Preferences DataStore</string>
+    <string name="hint_enter_age">Enter age</string>
+    <string name="hint_enter_first_name">Enter first name</string>
+    <string name="female_male">Male if checked, female if unchecked</string>
+    <string name="hint_enter_last_name">Enter last name</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="validation_error">Fill all fields correctly</string>
+</resources>

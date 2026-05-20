@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Task4 SQLite Contacts</string>
+    <string name="contacts_title">Справочник контактов SQLite</string>
+    <string name="name_hint">Имя контакта</string>
+    <string name="email_hint">Email контакта</string>
+    <string name="add_button">Add</string>
+    <string name="read_button">Read</string>
+    <string name="clear_button">Clear</string>
+    <string name="no_contacts">В таблице пока нет записей.</string>
+    <string name="enter_name_and_email">Введите имя и email</string>
+    <string name="cleared_message">Таблица очищена. Удалено строк: %1$d</string>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Task1 SharedPreferences Login</string>
+    <string name="login_title">Авторизация пользователя</string>
+    <string name="login_subtitle">Логин, пароль и дата последнего входа сохраняются в SharedPreferences.</string>
+    <string name="username_label">Имя пользователя</string>
+    <string name="password_label">Пароль</string>
+    <string name="username_hint">Введите имя пользователя</string>
+    <string name="password_hint">Введите пароль</string>
+    <string name="login_button">Войти</string>
+    <string name="logout_button">Выйти и очистить данные</string>
+    <string name="details_title">Сохранённые данные</string>
+    <string name="last_login_label">Дата последнего входа</string>
+    <string name="no_last_login">Пока нет сохранённого входа</string>
+    <string name="fill_all_fields">Заполните все поля</string>
+</resources>

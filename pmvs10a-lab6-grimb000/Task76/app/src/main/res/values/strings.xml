@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Task7.6 ContentProvider Pizzeria</string>
+    <string name="task76_title">Task 7.6: Пиццерия и ContentProvider</string>
+    <string name="task76_subtitle">Доступны все записи, агрегатные запросы, фильтрация, группировка и сортировка через ContentProvider.</string>
+    <string name="threshold_hint">Порог total_cost</string>
+    <string name="run_query">Выполнить запрос</string>
+    <string name="no_results">Нет данных для отображения.</string>
+    <string name="enter_threshold">Введите числовой порог для фильтра.</string>
+</resources>

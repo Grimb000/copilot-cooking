@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.example.task73.proto";
+option java_multiple_files = true;
+
+message UserProfileProto {
+  string email = 1;
+  string password = 2;
+}

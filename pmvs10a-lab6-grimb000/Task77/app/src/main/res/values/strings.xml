@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Task7.7 Room Pizzeria</string>
+    <string name="task77_title">Task 7.7: Пиццерия и Room</string>
+    <string name="task77_subtitle">Те же сценарии пиццерии, что и в 7.6, но уже через Android Room.</string>
+    <string name="threshold_hint">Порог total_cost</string>
+    <string name="run_query">Выполнить запрос</string>
+    <string name="no_results">Нет данных для отображения.</string>
+    <string name="enter_threshold">Введите числовой порог для фильтра.</string>
+</resources>

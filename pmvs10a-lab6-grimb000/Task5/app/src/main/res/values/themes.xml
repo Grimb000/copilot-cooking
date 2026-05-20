@@ -1,0 +1,4 @@
+<resources>
+    <style name="Base.Theme.Task5" parent="Theme.Material3.DayNight.NoActionBar" />
+    <style name="Theme.Task5" parent="Base.Theme.Task5" />
+</resources>

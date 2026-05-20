@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Task5 Content Provider</string>
+    <string name="contacts_title">Contacts via ContentProvider</string>
+    <string name="provider_hint">URI: content://com.example.task5.provider/contacts</string>
+    <string name="name_hint">Contact name</string>
+    <string name="email_hint">Contact email</string>
+    <string name="add_button">Add</string>
+    <string name="read_button">Read</string>
+    <string name="clear_button">Clear</string>
+    <string name="no_contacts">No contacts stored in provider yet.</string>
+    <string name="enter_name_and_email">Enter both name and email</string>
+    <string name="cleared_message">Provider table cleared. Removed rows: %1$d</string>
+</resources>
