@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Guess the number!</string>
+    <string name="behind">More!</string>
+    <string name="ahead">Less!</string>
+    <string name="hit">You guessed it!</string>
+    <string name="input_value">Check</string>
+    <string name="play_more">Play again</string>
+    <string name="try_to_guess">Guess the number from 1 to 100</string>
+    <string name="error">Enter a valid number!</string>
+    <string name="game_over">Game Over</string>
+    <string name="win_message">Congratulations! You guessed the number %1$d in %2$d attempts.</string>
+    <string name="lose_message">Out of attempts! The number was %1$d.</string>
+    <string name="attempts_left">Attempts left: %1$d</string>
+    <string name="ok">OK</string>
+</resources>

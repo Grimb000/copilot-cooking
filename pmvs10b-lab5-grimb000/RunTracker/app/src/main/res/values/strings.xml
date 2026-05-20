@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">RunTracker</string>
+    <string name="runtracker_title">RunTracker</string>
+    <string name="runtracker_subtitle">One screen, two location delivery modes: direct callbacks and PendingIntent.</string>
+    <string name="listener_block_title">1. LocationListener mode</string>
+    <string name="pending_block_title">2. PendingIntent mode</string>
+    <string name="label_status">Status:</string>
+    <string name="label_provider">Provider:</string>
+    <string name="label_latitude">Latitude:</string>
+    <string name="label_longitude">Longitude:</string>
+    <string name="label_updates">Updates:</string>
+    <string name="status_ready">Ready to start</string>
+    <string name="status_tracking">Tracking in progress</string>
+    <string name="status_stopped">Tracking stopped</string>
+    <string name="permission_required">Location permission is required.</string>
+    <string name="enable_location">Enable GPS or network location on the device.</string>
+    <string name="waiting_for_fix">Waiting for first fix</string>
+    <string name="start_tracking">Start</string>
+    <string name="stop_tracking">Stop</string>
+    <string name="gpx_hint">Load a GPX route into the emulator or device mock-location tool, then start either block. Coordinates and update counters will begin changing step by step as the route is replayed.</string>
+    <string name="provider_summary">GPS: %1$s | Network: %2$s</string>
+    <string name="provider_enabled">%1$s enabled</string>
+    <string name="provider_disabled">%1$s disabled</string>
+</resources>

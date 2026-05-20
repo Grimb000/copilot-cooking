@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Notepad</string>
+    <string name="model_status_unknown">Статус модели: проверка...</string>
+    <string name="model_status_ready">Статус модели: готова к распознаванию</string>
+    <string name="model_status_missing">Статус модели: не загружена</string>
+    <string name="model_status_downloading">Статус модели: загрузка...</string>
+    <string name="model_status_download_failed">Статус модели: ошибка загрузки</string>
+    <string name="download_model">Загрузить модель</string>
+    <string name="canvas_hint">Пишите здесь пальцем</string>
+    <string name="recognized_text_label">Распознанный текст</string>
+    <string name="recognized_text_hint">Здесь появится распознанный текст. Его можно отредактировать вручную.</string>
+    <string name="recognize">Распознать</string>
+    <string name="clear_canvas">Очистить полотно</string>
+    <string name="save">Сохранить</string>
+    <string name="empty_canvas_message">Сначала напишите что-нибудь на холсте.</string>
+    <string name="model_not_ready_message">Сначала загрузите русскую модель распознавания.</string>
+    <string name="note_saved_message">Заметка сохранена.</string>
+    <string name="canvas_cleared_message">Полотно очищено.</string>
+    <string name="recognition_failed_message">Не удалось распознать рукопись.</string>
+    <string name="download_success_message">Модель успешно загружена.</string>
+    <string name="download_failed_message">Не удалось загрузить модель.</string>
+    <string name="recognition_empty_result">Распознавание не вернуло текст.</string>
+    <string name="canvas_content_description">Область для рукописного ввода</string>
+</resources>

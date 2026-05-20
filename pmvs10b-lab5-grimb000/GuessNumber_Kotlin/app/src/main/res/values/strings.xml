@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Guess Number</string>
+    <string name="behind">Higher!</string>
+    <string name="ahead">Lower!</string>
+    <string name="hit">You guessed it!</string>
+    <string name="input_value">Check</string>
+    <string name="play_more">Play again</string>
+    <string name="try_to_guess">Guess the number from 1 to 100</string>
+    <string name="error">Enter a valid number from 1 to 100.</string>
+    <string name="game_over">Game over</string>
+    <string name="win_message">Great job! You guessed %1$d in %2$d attempts.</string>
+    <string name="lose_message">No attempts left. The secret number was %1$d.</string>
+    <string name="attempts_left">Attempts left: %1$d</string>
+    <string name="ok">OK</string>
+    <string name="gesture_draw_hint">Draw gestures here</string>
+    <string name="gesture_buffer_placeholder">Gesture buffer: -</string>
+    <string name="gesture_buffer_value">Gesture buffer: %1$s</string>
+</resources>
