@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Task6 Room MVVM</string>
+    <string name="events_title">Events with Room and MVVM</string>
+    <string name="clear_button">Clear all</string>
+    <string name="add_event">Add event</string>
+    <string name="no_events">No events in Room database yet.</string>
+    <string name="title_hint">Event title</string>
+    <string name="description_hint">Event description</string>
+    <string name="save_event">Save event</string>
+    <string name="update_event">Update event</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="event_saved">Event saved</string>
+    <string name="event_updated">Event updated</string>
+    <string name="event_deleted">Event deleted</string>
+    <string name="all_events_cleared">All events cleared</string>
+    <string name="fill_all_fields">Fill all fields</string>
+</resources>
